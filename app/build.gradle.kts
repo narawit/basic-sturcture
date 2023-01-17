@@ -1,6 +1,5 @@
 plugins {
     id("neversitup.android.application")
-    id("org.jetbrains.kotlin.android")
 }
 
 android {
@@ -47,9 +46,9 @@ dependencies {
     implementation(project(":core:domain"))
     implementation(project(":core:model"))
     implementation(project(":core:ui-xml"))
+    implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.activity)
     implementation(libs.androidx.appcompat)
     implementation(libs.androidx.lifecycle.viewModel.ktx)
     implementation(libs.androidx.lifecycle.runtime.ktx)
-    implementation("androidx.core:core-ktx:+")
 }

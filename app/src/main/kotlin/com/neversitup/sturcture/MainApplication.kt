@@ -4,6 +4,7 @@ import android.app.Application
 import com.neversitup.data.di.dataModule
 import com.neversitup.database.di.databaseModule
 import com.neversitup.datastore.di.dataStoreModule
+import com.neversitup.domain.di.domainModule
 import com.neversitup.network.di.networkModule
 import com.neversitup.sturcture.di.module
 import org.koin.android.ext.koin.androidContext
@@ -26,6 +27,7 @@ class MainApplication : Application() {
                 networkModule,
                 databaseModule,
                 dataModule,
+                domainModule,
                 module
             )
         }

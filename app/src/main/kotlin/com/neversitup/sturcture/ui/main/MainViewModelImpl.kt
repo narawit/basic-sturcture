@@ -3,11 +3,13 @@ package com.neversitup.sturcture.ui.main
 import androidx.lifecycle.viewModelScope
 import com.neversitup.common.extension.onComplete
 import com.neversitup.data.repository.PriceRepository
+import com.neversitup.domain.FetchPriceUseCase
 import kotlinx.coroutines.channels.Channel
 import kotlinx.coroutines.flow.receiveAsFlow
 
 class MainViewModelImpl(
-    private val priceRepository: PriceRepository
+    private val priceRepository: PriceRepository,
+    private val FetchPriceUseCase: FetchPriceUseCase
 ) : MainViewModel(), MainViewModel.Execute {
 
     override val execute: Execute

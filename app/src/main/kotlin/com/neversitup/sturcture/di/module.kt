@@ -5,5 +5,5 @@ import com.neversitup.sturcture.ui.main.MainViewModelImpl
 import org.koin.dsl.module
 
 val module = module {
-    single<MainViewModel> { MainViewModelImpl(get()) }
+    single<MainViewModel> { MainViewModelImpl(get(), get()) }
 }
