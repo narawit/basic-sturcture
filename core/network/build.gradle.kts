@@ -24,6 +24,6 @@ dependencies {
     implementation(libs.chucker)
 
     implementation(libs.okhttp.logging)
-    implementation(libs.retrofit.core)
+    api(libs.retrofit.core)
     implementation(libs.retrofit.kotlin.serialization)
 }

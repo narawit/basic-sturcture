@@ -12,8 +12,8 @@ android {
 }
 
 dependencies {
-    api(libs.androidx.core.ktx)
-    api(libs.kotlinx.coroutines.android)
+    implementation(libs.androidx.core.ktx)
+    implementation(libs.kotlinx.coroutines.android)
     implementation(libs.androidx.activity)
     implementation(libs.androidx.appcompat)
     implementation(libs.androidx.lifecycle.viewModel.ktx)
